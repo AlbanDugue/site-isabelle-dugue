@@ -56,6 +56,11 @@ h1 {
   margin: 2rem 0;
 }
 
+.titre-section {
+  font-size: 4rem;
+  padding-bottom: 1rem;
+}
+
 /* Mise en page du body du site */
 
 /* Main Container */
@@ -126,7 +131,8 @@ header {
 }
 
 /* Section expérience */
-#statistiques {
+
+.statistiques {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -134,37 +140,56 @@ header {
 }
 
 .big-stat {
-  font-size: 4.5rem;
+  font-size: 4rem;
   font-weight: bold;
   color: black;
-  padding: 3rem 0;
+  padding: 3rem 0 1.5rem 0;
 }
 
 .stat h1 {
   font-family: "Open Sans", sans-serif;
   padding-bottom: 0.7rem;
+  text-transform: uppercase;
 }
 
 /* Section Services */
 #services {
-  padding-top: 4rem;
+  padding-top: 3rem;
+}
+
+#formules {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2rem 0 1rem 0;
+}
+
+.presta {
+  border: #333 dotted 0.3rem;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.presta h1 {
+  text-align: center;
+}
+
+.presta hr {
+  margin-top: 1rem;
 }
 
 /* Section Contact */
 #contact {
+  padding-top: 2rem;
+}
+
+/* Footer */
+footer {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  padding-top: 3rem;
-}
-
-#photo-profil {
-  border-radius: 1rem;
-  width: 40%;
-}
-
-#contact-content {
-  padding-left: 3rem;
-  flex: 1;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  font-style: italic;
+  font-size: medium;
+  background-color: #012169;
 }

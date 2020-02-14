@@ -83,8 +83,9 @@ header {
 }
 
 #titre h3 {
-  font-size: 1rem;
-  color: #012169;
+  font-size: 1.7rem;
+  color: #c8102e;
+  font-family: "Dancing Script", cursive;
 }
 
 #menu-site {
@@ -135,4 +136,28 @@ header {
   font-weight: bold;
   color: black;
   padding: 3rem 0;
+}
+
+/* Section Services */
+#services {
+  padding-top: 4rem;
+}
+
+/* Section Contact */
+#contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+#photo-profil {
+  border-radius: 1rem;
+  width: 40%;
+}
+
+#contact-content {
+  padding-left: 3rem;
+  flex: 1;
 }

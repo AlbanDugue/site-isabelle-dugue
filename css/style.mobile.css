@@ -64,6 +64,14 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+#contact-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #photo-profil {

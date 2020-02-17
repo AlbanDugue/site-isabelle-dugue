@@ -26,6 +26,16 @@ header {
   padding: 1rem 0 1rem 0rem;
 }
 
+#titre h1 {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+
+#titre h3 {
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+}
+
 #menu-site {
   display: flex;
   flex-direction: column;
@@ -36,6 +46,8 @@ header {
 
 #menu-site li {
   margin-right: 0;
+  padding-bottom: 0.5rem;
+  font-size: 1.5rem;
 }
 
 /* expériences */

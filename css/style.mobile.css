@@ -1,0 +1,73 @@
+/* Class générique */
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+#main-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+}
+
+.titre-section {
+  text-align: center;
+}
+
+/* header */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0 1rem 0rem;
+}
+
+#menu-site {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.7rem;
+}
+
+#menu-site li {
+  margin-right: 0;
+}
+
+/* expériences */
+.statistiques {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* services */
+
+#formules {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.presta {
+  margin-bottom: 2rem;
+}
+
+/* contact */
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#photo-profil {
+  border-radius: 1rem;
+  width: 90%;
+  margin: 0 auto 2rem;
+}

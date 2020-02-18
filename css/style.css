@@ -187,7 +187,7 @@ header {
 
 /* Section Contact */
 #contact {
-  padding: 2rem 8rem;
+  padding-top: 2rem;
   margin: 0 auto;
 }
 
@@ -199,7 +199,7 @@ header {
 
 #photo-profil {
   border-radius: 1rem;
-  width: 50%;
+  width: 40%;
   float: left;
   margin-right: 2rem;
 }

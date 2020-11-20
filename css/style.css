@@ -189,6 +189,10 @@ header {
 #contact {
   padding-top: 2rem;
   margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 #contact i {
@@ -198,10 +202,9 @@ header {
 }
 
 #photo-profil {
-  border-radius: 1rem;
-  width: 40%;
-  float: left;
+  border-radius: 2rem;
   margin-right: 2rem;
+  width: 20rem;
 }
 
 #contact-content {
@@ -212,7 +215,7 @@ header {
   padding-top: 2rem;
 }
 
-#ligne-contact {
+.ligne-contact {
   padding-bottom: 1rem;
 }
 

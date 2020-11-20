@@ -1,9 +1,0 @@
-A faire :
-- 
-
-Modif / debug : 
-- 
-
-Add : 
-- Plus d'animations : hover sur les formules avec ombre portée // chiffre stat javascript // apparition texte english at home
--

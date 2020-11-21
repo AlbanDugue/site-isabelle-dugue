@@ -85,7 +85,7 @@
         </p>
     </section>
 
-    <section id="experience">
+    <section id="experience" onmouseenter="startStatsAnimation()">
         <div id="resume-xp">
             <h1 class="titre-section">Expérience</h1>
             <p>
@@ -101,23 +101,23 @@
             </p>
         </div>
         <!-- Statistiques chiffres -->
-        <div class="statistiques">
+        <div class="statistiques" >
             <div class="stat">
-                <div class="big-stat">13</div>
+                <div class="big-stat" id="annees"></div>
                 <h1>Ans d'expérience</h1>
             </div>
             <div class="stat">
-                <div class="big-stat">≃ 1137</div>
+                <div class="big-stat" >≃ <span id="eleves"></span></div>
                 <h1>Élèves suivis</h1>
             </div>
         </div>
         <div class="statistiques">
             <div class="stat">
-                <div class="big-stat">≃ 12 512</div>
+                <div class="big-stat" >≃ <span id="copies"></span> <span id="copies2"></span></div>
                 <h1>Copies corrigées</h1>
             </div>
             <div class="stat">
-                <div class="big-stat">≃ 79 590</div>
+                <div class="big-stat" >≃ <span id="cours"></span> <span id="cours2"></span></div>
                 <h1>Cours dispensés</h1>
             </div>
         </div>
@@ -135,7 +135,7 @@
             peut être fait sous la forme de <span>cours individuels</span>, et
             donc personnalisés, ou de <span>cours collectifs</span>, idéalement de
             façon hebdomadaire, ou bien encore sous forme de
-            <span>stage</span> pendant les vacances scolaires
+            <span>stage</span> pendant les vacances scolaires.
         </p>
         <p>
             Je dispense mes cours en me déplaçant <span>à domicile</span> dans les
@@ -193,6 +193,44 @@
 </div>
 <footer>
     <p>&#9400; Alban Dugué</p>
+
 </footer>
+<script>
+
+  function animateValue(obj, start, end, duration) {
+    let startTimestamp = null;
+    const step = (timestamp) => {
+      if (!startTimestamp) startTimestamp = timestamp;
+      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+      obj.innerHTML = Math.floor(progress * (end - start) + start);
+      if (progress < 1) {
+        window.requestAnimationFrame(step);
+      }
+    };
+    window.requestAnimationFrame(step);
+  }
+  function startStatsAnimation() {
+    const annees = document.getElementById("annees");
+    animateValue(annees, 0, 13, 1500);
+
+    const eleves = document.getElementById("eleves");
+    animateValue(eleves, 0, 1137, 2000);
+
+    const copies = document.getElementById("copies");
+    animateValue(copies, 0, 12, 2500);
+
+    const copies2 = document.getElementById("copies2");
+    animateValue(copies2, 0, 512, 2500);
+
+    const cours = document.getElementById("cours");
+    animateValue(cours, 0, 79, 3000);
+
+    const cours2 = document.getElementById("cours2");
+    animateValue(cours2, 0, 590, 3000);
+  }
+
+
+
+</script>
 </body>
 </html>

@@ -37,7 +37,7 @@ p {
   padding: 1rem 0;
 }
 
-span {
+p span {
   font-weight: bold;
   color: #c8102e;
 }
@@ -169,6 +169,13 @@ header {
 
 .stat {
   margin: 0 1rem;
+  transition: all .3s cubic-bezier(.67,-.51,.42,1.43);
+}
+
+.stat:hover {
+  transition: transform .25s;
+  transform: scale(1.10);
+  cursor: pointer;
 }
 
 .stat h1 {

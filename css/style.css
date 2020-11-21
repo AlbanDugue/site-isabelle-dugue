@@ -272,6 +272,38 @@ header {
   padding-bottom: 1rem;
 }
 
+/* Covid */
+#covid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#titre-covid {
+  border: #333 dotted 0.3rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+#titre-covid:hover {
+  background-color: #f2f2f2;
+}
+
+#titre-covid i {
+  color: #c8102e;
+  margin: 0 1rem;
+}
+
+#text-covid {
+  margin-bottom: 2rem;
+  text-align: center;
+  display: none;
+}
+
 /* Footer */
 footer {
   display: flex;

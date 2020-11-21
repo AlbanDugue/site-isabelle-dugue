@@ -92,3 +92,7 @@ header {
   width: 20rem;
   margin: 0 auto 2rem;
 }
+
+#titre-covid {
+  font-size: 2.1rem;
+}

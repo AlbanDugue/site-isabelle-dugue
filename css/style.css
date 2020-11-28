@@ -129,8 +129,20 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(../img/ban-towerbridge.jpg) center center/cover;
-  padding: 3rem 2rem;
+  padding: 5rem 2rem;
+
+  /* The image used */
+  background-image: url(../img/ban-towerbridge.jpg);
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 .ban-content {
@@ -147,6 +159,7 @@ header {
   color: white;
   font-family: "Open Sans", sans-serif;
 }
+
 
 /* Section expérience */
 
@@ -209,6 +222,7 @@ header {
   transition: transform .25s;
   transform: scale(1.10);
   cursor: pointer;
+  background-color: #fcfcfc;
 }
 
 @media (max-width: 1000px) {
